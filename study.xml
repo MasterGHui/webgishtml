@@ -1,0 +1,27 @@
+<!-- <?xmlversion = "1.0" encoding = "utf-8"?> -->
+
+<classroom>
+    <student>
+     <name>胡琦</name>
+     <number>20202020202</number>
+     <birth>1953/1/1</birth>
+    </student>
+
+    <student>
+     <name>刘宇豪</name>
+     <number>234243452345</number>
+     <birth>1923/1/1</birth>
+    </student>
+
+    <student>
+     <name>钟世能</name>
+     <number>2354567856</number>
+     <birth>1913/1/1</birth>
+    </student>
+
+    <student>
+     <name>温庭筠</name>
+     <number>123546854</number>
+     <birth>812/1/1</birth>
+    </student>
+</classroom>

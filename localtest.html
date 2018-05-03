@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>这是个测试网页</title>
+</head>
+<body>
+
+<h1 align="center">人员信息</h1>
+<hr>
+<br>
+
+<script type="text/javascript">
+    if (window.XMLHttpRequest)
+      {// code for IE7+, Firefox, Chrome, Opera, Safari
+      xmlhttp=new XMLHttpRequest();
+      }
+    else
+      {// code for IE6, IE5
+      xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+    xmlhttp.open("GET","study.xml",false);
+    xmlhttp.send();
+    xmlDoc=xmlhttp.responseXML;
+    
+    document.write("<table border='1'>");
+    var x = xmlDoc.getElementsByTagName("student");
+    for (i=0;i<x.length;i++)
+      {
+      document.write("<tr><td>");
+      document.write(x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue);
+      document.write("</td><td>");
+      document.write(x[i].getElementsByTagName("number")[0].childNodes[0].nodeValue);
+      document.write("</td><td>");
+      document.write(x[i].getElementsByTagName("birth")[0].childNodes[0].nodeValue);
+      document.write("</td></tr>");
+      }
+    document.write("</table>");
+</script>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="190">
+    <polygon points="100,10 40,180 190,60 10,60 160,180"
+    style="fill:rgba(255, 123, 0, 0.808);stroke:purple;stroke-width:5;fill-rule:evenodd;"/>
+ </svg>
+<ul>
+    <li>
+        <a href="http://www.bilibili.com" target="_blank" >这是个网站</a>
+    </li>
+</ul>
+</body>
+</html>
